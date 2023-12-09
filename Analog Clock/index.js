@@ -14,10 +14,10 @@ setInterval(()=>{
     let m=dateTime.getMinutes()
     let s= dateTime.getSeconds()
 
-    calculatedHour=30*h+m/2+s/120
-    if (calculatedHour>12){
-        calculatedHour=calculatedHour-12
+    if (h>12){
+        h=h-12
     }
+    calculatedHour=30*h+m/2+s/120
     calculatedMin=6*m+s/10
     calculatedSec=6*s
 
